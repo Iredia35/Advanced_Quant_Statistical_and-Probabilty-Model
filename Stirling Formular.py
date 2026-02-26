@@ -1,5 +1,12 @@
 import math
 
+"""
+Stirling’s formula is a mathematical formula used to estimate the value of 𝑛! for large positive integers 𝑛. 
+Because factorials grow extremely quickly, direct calculation becomes difficult; this formula provides a high‑accuracy 
+estimate using elementary mathematical constants like 𝑒 and π.
+
+"""
+
 class StirlingFormula:
     def __init__(self, n):
         
@@ -37,4 +44,5 @@ result2 = stirling2.calculate()
 print(f"Stirling's approximation for {n}! is: {result}")
 print(f"Stirling's approximation for {n2}! is: {result2}")
 print(f"Difference for {n}! is: {stirling.check_diff()}")
+
 print(f"Difference for {n2}! is: {stirling2.check_diff()}")
